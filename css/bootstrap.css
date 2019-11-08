@@ -80,8 +80,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1.TituloPad {
 
-  align-content: center;
+  padding-left: 50px;
+
 }
+
+h4.TituloPadXY {
+
+  padding-left: 80px;
+  padding-top: 10px;
+}
+
 
 p {
   margin-top: 0;
@@ -360,6 +368,7 @@ template {
   display: none;
 }
 
+
 [hidden] {
   display: none !important;
 }
@@ -386,6 +395,8 @@ h3, .h3 {
 h4, .h4 {
   font-size: 1.5rem;
 }
+
+h4.
 
 h5, .h5 {
   font-size: 1.25rem;
@@ -3439,6 +3450,7 @@ input[type="button"].btn-block {
   width: 100%;
 }
 
+
 .input-group > .form-control,
 .input-group > .form-control-plaintext,
 .input-group > .custom-select,
@@ -4201,6 +4213,20 @@ input[type="button"].btn-block {
   justify-content: space-between;
 }
 
+.navbar> .container-fluid-bg {
+
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-image: url("Images/coolbackground.png")
+
+
+}
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
@@ -10070,4 +10096,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 }
 
+
+.bgimage { 
+  background-image: url(../Images/cool-background.png);
+}
+
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url(../images/cool-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /*# sourceMappingURL=bootstrap.css.map */
