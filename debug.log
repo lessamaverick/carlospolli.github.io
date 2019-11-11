@@ -13,3 +13,5 @@
 =======
 >>>>>>> b273c652c25ac6788e0b61b9887d58951285b3de
 >>>>>>> dc618bbd22a11f7c534c8f87572b9760f0ba1052
+[1111/094520.905:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[1111/094539.233:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
