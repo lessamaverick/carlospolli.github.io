@@ -10111,3 +10111,9 @@ a.text-dark:hover, a.text-dark:focus {
   background-repeat: no-repeat;
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.responsive {
+  width: 100%;
+  max-width: 1024;
+  height: auto;
+}
