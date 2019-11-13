@@ -3,95 +3,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <!--MIN VERSION FOR BOOTSTRAP
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  
+    <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='https:fonts.googleapis.com/css?family=Pacifico' type='text/css'>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
+    <link rel='stylesheet' href ='css/style.css' type='text/css'> 
     <title>Dashboard</title>
 </head>
 
-<body>
+<body class= "bg-main">
+    <header>
+    
+        <div id="nav-placeholder">
+            </div>
+            <script>
+            $(function(){
+            $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+    </header
 
-    <div id="nav-placeholder">
 
+    <main class="container-fluid mt-4 pt-5 pb-5 bg-light">
+        <div class="row">
+            <div class= "container-fluid co-12 mtcustom ptcustom"
+            
+                <div class="bd-example">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                            <img src="images/powerbi.jpg" class="d-block w-100 CarroselImgs" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h2>PowerBI</h2>
+                            <p>Agora você pode ver o PowerBI da sua área!</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/planoacao.png" class="d-block w-100 CarroselImgs" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h2>Plano de Ação</h2>
+                            <p>Faça seu plano de ação de maneira ágil!</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="images/upload.jpg" class="d-block w-100 CarroselImgs" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            <h2>Carga</h2>
+                            <p>A carga nunca ficou tão fácil!</p>
+                            </div>
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    
+        <div class"row">
+            <div class "container ptcustom">
+                <h1 class="display-4 fontWhite text-center ptInicio">Bem vindo ao Dashboard </h1>
+                <p class="fontWhite text-center"> Aqui você consegue ver seu PowerBI com muito mais opções! </p>
+            </div>
         </div>
 
-        <script>
-        $(function(){
-        $("#nav-placeholder").load("nav.html");
-        });
-    </script>
+        <div class="row pt-5 pl-3 pr-3">
+            <div class= "container col-3">
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Área</option>
+                        <option value="1">RH</option>
+                        <option value="2">Finanças</option>
+                        <option value="3">Marketing</option>
+                    </select>
+                </div>
 
-
-  <main role="main" class="container-fluid mt-4 pt-5">
-        <div class="row">
-
-        
-
-        <!--   Arrumar-->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-
-            <h1 class="text-center">Bem-vindo ao Novo Dashboard</h1>
-                <p class="text-center">Aqui você poderá fazer a inclusão do indicador da sua área!</p>
-
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Empresa</option>
+                        <option value="1">VC</option>
+                        <option value="2">VE</option>
+                        <option value="3">Nexa</option>
+                    </select>   
+                </div>
                 
-                <img src="Images/Power BI.png" alt="Power BI" width ="1024 " height="600" class="responsive" style="float: right; padding-top: 15px">
+                <div class="input-group mb-3">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Atividade</option>
+                        <option value="1">Folha de Pagamento</option>
+                        <option value="2">FGTS</option>
+                        <option value="3">Desligamento</option>
+                    </select>
+                </div>
 
-                  <div class="dropdown">
-                        <button class="btn btn-primary dropdown-toggle" style="height:40px; width:200px; margin-top: 15px" type="button" data-toggle="dropdown">Cliente
-                        <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                        <input class="form-control" id="myInput" type="text" placeholder="Procurar..">
-                        <li><a href="#">VC</a></li>
-                        <li><a href="#">VE</a></li>
-                        <li><a href="#">Nexa</a></li>
-                        <li><a href="#">CBA</a></li>
-                        <li><a href="#">Fibria</a></li>
-                        <li><a href="#">BV</a></li>
-                        </ul>
 
-                        <p id="padtop"></p> 
-
-                        <button class="btn btn-primary dropdown-toggle" type="button"  style="height:40px; width:200px; display:block" data-toggle="dropdown">Area
-                        <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                        <input class="form-control" id="myInput" type="text" placeholder="Procurar..">
-                        <li><a href="#">Imposto Indiretos</a></li>
-                        <li><a href="#">Impostos Diretos</a></li>
-                        <li><a href="#">Núcleo Financeiro</a></li>
-                        <li><a href="#">Contabilidade VC</a></li>
-                        <li><a href="#">Cobrança</a></li>
-                        </ul>
-
-                        <p id="padtop"></p>
-
-                        <button class="btn btn-primary dropdown-toggle" type="button"  style="height:40px; width:200px" data-toggle="dropdown">Atividade
-                        <span class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                        <input class="form-control" id="myInput" type="text" placeholder="Procurar..">
-                        <li><a href="#">Abertura de Conta-Corrente</a></li>
-                        <li><a href="#">Exclusão de Usuários</a></li>
-                        <li><a href="#">Covenants Entregues</a></li>
-                        <li><a href="#">Fianças Pagas</a></li>
-                    </div>
-                    </div>
-        
-
-    
             </div>
+
+            <div class="container col-9"> 
+                <img src="Images/Power BI.png" class="img-fluid" alt="Responsive image">        
+            </div>
+
+
         </div>    
 
-        </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-<
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/teste.js"> </script>
+    
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 </body>

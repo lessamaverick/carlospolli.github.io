@@ -1,0 +1,54 @@
+.bg-darkgray {
+    background-color: #222629;
+
+}
+
+.imgPowerBI {
+
+    object-fit: cover;
+    height: 600px;
+    float: right;
+
+}
+
+.CarroselImgs {
+
+    object-fit: cover;
+    object-position: 0 60%;
+    height: 400px;
+}
+
+
+.bg-main {
+
+    background-image: url("../Images/background.jpg");
+
+}
+
+.navbar-inner {
+    background:transparent;
+}
+
+.ptcustom {
+
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.mtcustom {
+
+    margin-top: 50px;
+}
+
+.fontWhite {
+
+    color: #ffffff;
+
+}
+
+.ptInicio {
+
+    padding-top: 100px;
+
+}
