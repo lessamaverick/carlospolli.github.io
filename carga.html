@@ -13,27 +13,23 @@
     <title>Dashboard - Cargas</title>
 </head>
 
-<body>
+<body class="bg-light">
 
     <div id="nav-placeholder">
         <script>
-        $(function(){
-        $("#nav-placeholder").load("nav.html");
-        });
-    </script>
-        </div>
+            $(function(){
+            $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+    </div>
 
- 
-            <!--   Arrumar-->
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
-      <main role="main" class="container-fluid mt-4 pt-5">
-    
+    <main Class="container-fluid mtpt-carga">
+        
         <div class="row"> 
-
-                <div id="PeriodoRef" style="display:flex; align-items: center">
-                        <h4><label for="Student">Período de Referência </label></h4>
-                        <div class='input-group list-inline-item' style='width: 400px; padding-left: 10px' id='dpRM'> 
+                <div class="container-fluid ml-3">
+                        <h5><label for="Student">Período de Referência </label></h5>
+                        <div class='input-group list-inline-item buttom-Referencia' id='dpRM'> 
                             <input type='text' class="form-control form-control-1 form-input input-sm fromq" placeholder="Selecione um Mês e um Ano"></input>
                             <span class="input-group-addon">
                                 <span class="fa fa-calendar"></span>
@@ -43,27 +39,25 @@
         </div>
 
         <div class"row">
-                <div id="Area" style="display:flex; align-items: center; padding-top: 50px">
-                        <h4><label for="Student">Área</label></h4>
-                        <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" style="width:390px; margin-left: 10px" type="button" data-toggle="dropdown">Área
-                                <span class="caret"></span></button>
-                                <ul class="dropdown-menu">
-                                <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                                <li><a href="#">Imposto Indiretos</a></li>
-                                <li><a href="#">Impostos Diretos</a></li>
-                                <li><a href="#">Núcleo Financeiro</a></li>
-                                <li><a href="#">Cobrança</a></li>
-
-                                </ul>
-                        </div>
+            <div class= "container-fluid mt-5">
+                <h5><label for="X">Área Desejada</label></h5>
+                <div class="input-group buttom-Referencia">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Área</option>
+                        <option value="1">RH</option>
+                        <option value="2">Finanças</option>
+                        <option value="3">Marketing</option>
+                    </select>
                 </div>
+            </div>
+
         </div>
 
-     
+        <div class="row">
+            <div class="container-fluid table-responsive mt-5">
 
-                    <table class="table" style="margin-top: 200px; ">
-                        <thead class="thead-dark">
+                    <table class="table">
+                        <thead class="tableheadercolor">
                             <tr>
                             <th>#</th>
                             <th>Nome KPI</th>
@@ -89,7 +83,7 @@
                             </tr>
                             
                             <tr>
-                            <th scope="row">1</th>
+                            <th scope="row">2</th>
                             <td>Pagamento Imposto</td>
                             <td>Serviço RH</td>
                             <td>Operações de RH</td>
@@ -101,7 +95,7 @@
 
 
                             <tr>
-                            <th scope="row">1</th>
+                            <th scope="row">3</th>
                             <td>Recolhimento</td>
                             <td>Serviço RH</td>
                             <td>Operações de RH</td>
@@ -114,16 +108,19 @@
                         </table>        
      
 
-        <a name="" id="" class="btn btn-primary"  href="#" role="Enviar"  style="width:390px; float: right; margin-top: 20px; margin-bottom: 20px" aria-hidden="true"></i>Enviar</a>
+             <a name="" id="" class="btn btn-primary btn-outline-dark tableheadercolor"  href="#" role="Enviar"  style="width:390px; float: right; margin-top: 20px; margin-bottom: 20px" aria-hidden="true"></i>Enviar</a>
+            </div>
 
+        </div>
 
-    </div>
+    </main>
+
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
+        <script src="js/VisibleNav.js"></script>
 </body>
 
 

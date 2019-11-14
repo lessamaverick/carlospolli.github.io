@@ -144,3 +144,22 @@ nav.shrink {
     background-color: rgb(31, 32, 37);
     height: 60px;
 }
+
+
+.mtpt-carga {
+
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+
+.buttom-Referencia {
+  width: 400px;
+}
+
+.tableheadercolor {
+
+   background-color: rgb(31, 32, 37);
+   color: #ffffff;
+
+}
