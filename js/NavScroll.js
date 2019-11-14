@@ -1,3 +1,8 @@
 $(window).scroll(function(){
-	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
-});
+    if ($(document).scrollTop() > 550) {
+        $('nav').addClass('shrink');
+    }
+    else {
+        $('nav').removeClass('shrink');
+        }
+    });
