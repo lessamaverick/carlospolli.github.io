@@ -113,3 +113,43 @@ header {
 
 
 body {overflow-x: hidden;}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.scrollhidden {
+    overflow : hidden;
+}
+
+.smooth {
+
+
+    scroll-behavior: smooth;
+}
+
+
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: #fff;
+    font : normal 400 20px/1 'Josefin Sans', sans-
+
+.demo a:hover {
+  opacity: .5;
+}
+
+
+body{min-height:20vh;}
+.navbar-default{
+  transition:500ms ease;
+  background:transparent;
+}
+.navbar-default.scrolled{
+  background:rgb(0, 0, 0);
+}
