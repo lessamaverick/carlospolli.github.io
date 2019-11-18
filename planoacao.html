@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel='stylesheet' href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href ='css/style.css' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>Dashboard - Cargas</title>
+       <nav id="nav-placeholder">
+            <script>
+            $(function(){
+            $("#nav-placeholder").load("nav.html");
+            });
+            </script>
+       </nav>
+        
+</head>
+
+
+<body class="bg-light">
+
+    <main Class="container-fluid mtpt-carga">
+        <h1 class= "pb-5 text-center">Plano de Ações</h1>
+        
+        <div class="row"> 
+                <div class="container-fluid ml-3">
+                    <div class="form-group buttom-Referencia">
+                        <label>Período de Referência:</label>
+                        <input type="text" class="form-control form-control-1 input-sm from" placeholder="Mês/Ano" >
+                    </div>
+               </div>
+        </div>
+
+        <div class"row">
+            <div class= "container-fluid mt-5">
+                <label for="X">Área Desejada</label>
+                <div class="input-group buttom-Referencia">
+                    <select class="custom-select" id="inputGroupSelect02">
+                        <option selected>Área</option>
+                        <option value="1">RH</option>
+                        <option value="2">Finanças</option>
+                        <option value="3">Marketing</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="container-fluid table-responsive mt-5">
+
+                    <table class="table table-hover">
+                        <thead class="tableheadercolor">
+                            <tr>
+                            <th>#</th>
+                            <th>Nome KPI</th>
+                            <th>Nome Serviço</th>
+                            <th>Área</th>
+                            <th>Empresa</th>
+                            <th>Responsável</th>
+                            <th>Prazo</th>
+                            <th>Realizado</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="clickable-row" data-toggle="modal" data-target="#ModalPlanoAcao">
+                            <th scope="row">1</th>
+                            <td>Folha Funcionário</td>
+                            <td>Serviço RH</td>
+                            <td>Operações de RH</td>
+                            <td>VC</td>
+                            <td>Carlos Polli</td>
+                            <td>15/11/2019</td>
+                            <td>OK</td>                            
+                            </tr>
+                            
+                            <tr class="clickable-row" data-toggle="modal" data-target="#ModalPlanoAcao">
+                            <th scope="row">2</th>
+                            <td>Pagamento Imposto</td>
+                            <td>Serviço RH</td>
+                            <td>Operações de RH</td>
+                            <td>VE</td>
+                            <td>Washington Maverick</td>
+                            <td>15/01/2020</td>
+                            <td></td>                            
+                            </tr>
+                    </table>
+     
+             </div>
+        </div>
+
+
+                <!-- Modal -->
+                <div id="success_tic" class="modal fade" role="dialog">
+                    <div class="modal-dialog pt-5">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                <a class="close" href="#" data-dismiss="modal">&times;</a>
+                                <div class="page-body">
+                                <div class="head">  
+                                <h3 style="margin-top:5px;">Ótimo!</h3>
+                                <p>Sua carga foi criada com sucesso!</p>
+                                </div>
+
+                            <h1 style="text-align:center;"><div class="checkmark-circle">
+                            <div class="background"></div>
+                            <div class="checkmark draw"></div>
+                            </div><h1>
+
+                            </div>
+                            </div>
+                        </div>
+
+                </div>
+
+
+                <div class="modal fade" id="ModalPlanoAcao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastro de Ações</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                        <h5 class="pb-2">Informações:</h5>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Nome</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Folha de Pagamento">
+                        </div>
+                        <div class="form-group buttom-Referencia pb-2">
+                            <label>Período</label>
+                            <input type="text" class="form-control form-control-1 input-sm from" placeholder="Mês/Ano" >
+                        </div>
+
+                        <h5 class="pb-2">5 porquês:</h5>
+            
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Porquê 1?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Porquê 2?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Porquê 3?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Porquê 4?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group pb-2">
+                            <label for="message-text" class="col-form-label">Porquê 5?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+
+                        <h5 class="pb-2">5W2H:</h5>
+            
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">O que?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Como?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group buttom-Referencia">
+                            <label>Quando?</label>
+                            <input type="text" class="form-control form-control-1 input-sm from" placeholder="Mês/Ano" >
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Aonde?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Quanto?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Quem?</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Porque?</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+
+
+                        </form>
+                    </div>                   
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#success_tic">Enviar</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+   
+   
+    </main>
+        
+        
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css"/>
+        <script src="js/monthyearpicker.js"></script>
+        <script src="js/VisibleNav.js"></script>
+</body>
+
+
+
