@@ -140,10 +140,10 @@ html {
 }
 
 
-Nav.shrink {
+nav.shrink {
     background-color: rgb(31, 32, 37);
-    min-height: 60px;
 }
+
 
 
 .mtpt-carga {
