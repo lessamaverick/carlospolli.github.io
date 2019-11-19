@@ -28,130 +28,103 @@
 
     <main Class="container-fluid mtpt-carga">
 
-                    <div class="container">
-                    <div class='col-md-5'>
-                        <div class="form-group">
-                        <label>Início do Desbloqueio</label
-                        <div class="input-group date" id="datetimepicker7" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker7"/>
-                                <div class="input-group-append" data-target="#datetimepicker7" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col-md-5'>
-                        <div class="form-group">
-                        <label>Fim do Desbloqueio</label
-                        <div class="input-group date" id="datetimepicker8" data-target-input="nearest">
-                                <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker8"/>
-                                <div class="input-group-append" data-target="#datetimepicker8" data-toggle="datetimepicker">
-                                    <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="container">
+            <form>
+                <h2 class="pb-2">Desbloquear Carga</h2>
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="first">Nome Completo</label>
+                    <input type="text" class="form-control" placeholder="" id="first">
                     </div>
                 </div>
-                <script type="text/javascript">
-                    $(function () {
-                        $('#datetimepicker7').datetimepicker();
-                        $('#datetimepicker8').datetimepicker({
-                            useCurrent: false
-                        });
-                        $("#datetimepicker7").on("change.datetimepicker", function (e) {
-                            $('#datetimepicker8').datetimepicker('minDate', e.date);
-                        });
-                        $("#datetimepicker8").on("change.datetimepicker", function (e) {
-                            $('#datetimepicker7').datetimepicker('maxDate', e.date);
-                        });
-                    });
-                </script>
+        
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="last">Área</label>
+                    <input type="text" class="form-control" placeholder="" id="last">
+                    </div>
+                </div>
+
+                </div>
+
+
+                <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="company">Início do Desbloqueio</label>
+                    <input type="text" class="form-control" placeholder="" id="company">
+                    </div>
+
+
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                    <label for="phone">Fim do Desbloqueio</label>
+                    <input type="tel" class="form-control" id="phone">
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+                </div>
+                <!--  row   -->
+
+
+                <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                    <label for="email">Início da Carga</label>
+                    <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                <!--  col-md-6   -->
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <label for="url">Fim da Carga</label>
+                    <input type="url" class="form-control" id="url">
+                    </div>
+
+                </div>
+                <!--  col-md-6   -->
+                </div>
+                <!--  row   -->
+
+                <button type="button" class="btn btn-primary btn-outline-dark tableheadercolor Button-Enviar" data-toggle="modal" data-target="#success_tic">Enviar</button>
+            </form>
+        </div>
 
     
-        <div class="row">
-            <div class="container-fluid table-responsive mt-5">
+    
 
-                    <table class="table">
-                        <thead class="tableheadercolor">
-                            <tr>
-                            <th>#</th>
-                            <th>Nome KPI</th>
-                            <th>Nome Serviço</th>
-                            <th>Área</th>
-                            <th>Empresa</th>
-                            <th>Volume Entregue</th>
-                            <th>Volume Entregue com Qualidade</th>
-                            <th>Volume Acordado</th>
+        <!-- Modal -->
+        <div id="success_tic" class="modal fade" role="dialog">
+            <div class="modal-dialog">
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>Folha Funcionário</td>
-                            <td>Serviço RH</td>
-                            <td>Operações de RH</td>
-                            <td>VC</td>
-                            <td contenteditable='true'>35</td>
-                            <td contenteditable='true'>30</td>
-                            <td>30</td>                            
-                            </tr>
-                            
-                            <tr>
-                            <th scope="row">2</th>
-                            <td>Pagamento Imposto</td>
-                            <td>Serviço RH</td>
-                            <td>Operações de RH</td>
-                            <td>VE</td>
-                            <td contenteditable='true'>30</td>
-                            <td contenteditable='true'>25</td>
-                            <td>20</td>                            
-                            </tr>
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                        <a class="close" href="#" data-dismiss="modal">&times;</a>
+                        <div class="page-body">
+                        <div class="head"> 
+                        <h3 style="margin-top:5px;">Ótimo!</h3>
+                        <p>Sua carga foi criada com sucesso!</p>
+                        </div>
 
+                    <h1 style="text-align:center;"><div class="checkmark-circle">
+                    <div class="background"></div>
+                    <div class="checkmark draw"></div>
+                    </div><h1>
 
-                            <tr>
-                            <th scope="row">3</th>
-                            <td>Recolhimento</td>
-                            <td>Serviço RH</td>
-                            <td>Operações de RH</td>
-                            <td>VC</td>
-                            <td contenteditable='true'>11</td>
-                            <td contenteditable='true'>9</td>
-                            <td>10</td>                            
-                            </tr>
-                        </tbody>
-                        </table>        
-     
+                    </div>
+                    </div>
+                </div>
 
-             <button type="button" class="btn btn-primary btn-outline-dark tableheadercolor Button-Enviar" data-toggle="modal" data-target="#success_tic">Enviar</button>
-             </div>
         </div>
 
 
-                <!-- Modal -->
-                <div id="success_tic" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-
-                                <!-- Modal content-->
-                                <div class="modal-content">
-                                <a class="close" href="#" data-dismiss="modal">&times;</a>
-                                <div class="page-body">
-                                <div class="head">  
-                                <h3 style="margin-top:5px;">Ótimo!</h3>
-                                <p>Sua carga foi criada com sucesso!</p>
-                                </div>
-
-                            <h1 style="text-align:center;"><div class="checkmark-circle">
-                            <div class="background"></div>
-                            <div class="checkmark draw"></div>
-                            </div><h1>
-
-                            </div>
-                            </div>
-                        </div>
-
-                </div>
-   
    
     </main>
   
